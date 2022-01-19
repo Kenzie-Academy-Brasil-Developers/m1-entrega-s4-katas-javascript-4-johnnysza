@@ -1,1 +1,40 @@
-/* você pode estilizar se quiser !!! */
+body {
+    background-color: aquamarine;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-resultados {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 1100px;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+}
+
+.botoes{
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.botoes-katas {
+    display: flex;
+    width: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.botoes-katas button {
+    margin: 5px 0;
+    height: 30px;
+    width: 80px;
+}
+
+.botoes-katas button:hover{
+    cursor: pointer;
+}
