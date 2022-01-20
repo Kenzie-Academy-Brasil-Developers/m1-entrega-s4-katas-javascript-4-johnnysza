@@ -155,8 +155,9 @@ function kata16(){
 const botaoKata16 = document.getElementById("kata16");
 botaoKata16.addEventListener("click", kata16);
 
+let pop = ''
 function kata17(){
-    const lotrPop = lotrCitiesArray.pop();
+    pop = lotrCitiesArray.pop()
     showResults(lotrCitiesArray, "Kata 17");
 }
 
@@ -164,15 +165,16 @@ const botaoKata17 = document.getElementById("kata17");
 botaoKata17.addEventListener("click", kata17);
 
 function kata18(){
-    const lotrPush = lotrCitiesArray.push();
+    const lotrPush = lotrCitiesArray.push(pop);
     showResults(lotrCitiesArray, "Kata 18");
 }
 
 const botaoKata18 = document.getElementById("kata18");
 botaoKata18.addEventListener("click", kata18);
 
+let shift = ''
 function kata19(){
-    const lotrPop = lotrCitiesArray.shift();
+    shift = lotrCitiesArray.shift()
     showResults(lotrCitiesArray, "Kata 19");
 }
 
@@ -180,7 +182,7 @@ const botaoKata19 = document.getElementById("kata19");
 botaoKata19.addEventListener("click", kata19);
 
 function kata20(){
-    const lotrUnshift = lotrCitiesArray.unshift();
+    lotrCitiesArray.unshift(shift);
     showResults(lotrCitiesArray, "Kata 20");
 }
 
